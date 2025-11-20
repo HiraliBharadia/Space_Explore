@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Fun Facts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background: url("b2.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+    .fact-card {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+    .fact-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+    h2 {
+      text-shadow: 1px 1px 5px black;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark"
+     style="background: linear-gradient(90deg, rgba(0, 140, 255, 0.4), rgba(0, 200, 255, 0.3));
+            backdrop-filter: blur(8px);
+            box-shadow: 0 2px 15px rgba(0, 180, 255, 0.4);">
+
+
+  <div class="container-fluid">
+    <a class="navbar-brand text-white d-flex align-items-center" href="index.html">
+      <img src="A_1.jpg" alt="Logo" width="40" height="40" class="me-2 rounded-circle">
+      Space Explore
+    </a>
+    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+      ☰
+    </button>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+       <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="plant.html">Planet</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="event.html">Event</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="FunFact.html">FunFact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutUs.html">AboutUs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactUs.html">ContactUs</a>
+      </li>
+  </div>
+</div>
+
+<div class="container py-5">
+  <h2 class="text-center mb-5 text-white fw-bold">Fun Space Facts </h2>
+  
+  <div class="fact-card">
+    <h5>1. Venus Rotation</h5>
+    <p>A day on Venus is longer than a year on Venus.</p>
+  </div>
+  <div class="fact-card">
+    <h5>2. Jupiter's Size</h5>
+    <p>Jupiter is so big that it could fit all other planets inside it.</p>
+  </div>
+  <div class="fact-card">
+    <h5>3. Mars Moons</h5>
+    <p>Mars has two small moons named Phobos and Deimos.</p>
+  </div>
+  <div class="fact-card">
+    <h5>4. Supernovae</h5>
+    <p>Supernovae release more energy in a few seconds than the Sun in its lifetime.</p>
+  </div>
+  <div class="fact-card">
+    <h5>5. Pluto's Status</h5>
+    <p>Pluto is now classified as a dwarf planet, not a main planet.</p>
+  </div>
+  <div class="fact-card">
+    <h5>6. The Milky Way</h5>
+    <p>Our galaxy, the Milky Way, contains over 100 billion stars.</p>
+  </div>
+  <div class="fact-card">
+    <h5>7. Black Hole Gravity</h5>
+    <p>The gravity of a black hole is so strong that even light cannot escape it.</p>
+  </div>
+  <div class="fact-card">
+    <h5>8. Largest Volcano</h5>
+    <p>Olympus Mons on Mars is the largest volcano in the solar system.</p>
+  </div>
+  <div class="fact-card">
+    <h5>9. Light Speed</h5>
+    <p>Light from the Sun takes about 8 minutes to reach Earth.</p>
+  </div>
+  <div class="fact-card">
+    <h5>10. Water in Space</h5>
+    <p>Water has been found in comets, moons, and planets in our solar system.</p>
+  </div>
+</div>
+
+</body>
+</html>

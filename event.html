@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astronomical Events</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url("b2.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .job-form {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .form-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .form-row label {
+      width: 100px;
+      font-weight: bold;
+    }
+
+    .form-row input {
+      flex: 1;
+      padding: 5px;
+    }
+
+    .form-row button {
+      margin-top: 15px;
+      padding: 8px 12px;
+    }
+
+    .form-row:first-child {
+      margin-top: 15px;
+    }
+
+    td:first-child {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark"
+     style="background: linear-gradient(90deg, rgba(0, 140, 255, 0.4), rgba(0, 200, 255, 0.3));
+            backdrop-filter: blur(8px);
+            box-shadow: 0 2px 15px rgba(0, 180, 255, 0.4);">
+
+  <div class="container-fluid">
+    <a class="navbar-brand text-white d-flex align-items-center" href="#">
+      <img src="A_1.jpg" alt="Logo" width="40" height="40" class="me-2 rounded-circle">
+      Space Explore
+    </a>
+    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+      ☰
+    </button>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="plant.html">Planet</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="event.html">Event</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="FunFact.html">FunFact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutUs.html">AboutUs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactUs.html">ContactUs</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container py-5">
+  <div class="card shadow-lg p-4 rounded-4">
+    <h2 class="text-center mb-4 fw-bold text-primary">
+      🌠 Upcoming Astronomical Events 
+    </h2>
+
+    <div class="table-responsive">
+      <table class="table table-hover align-middle text-start">
+        <thead class="table-dark">
+          <tr>
+            <th> Event</th>
+            <th> Date</th>
+            <th> Description📝</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td>🌞Solar Eclipse</td>
+            <td>April 8, 2025</td>
+            <td>Total solar eclipse visible in North America.</td>
+          </tr>
+          <tr>
+            <td>☄️ Perseid Meteor Shower</td>
+            <td>August 12, 2025</td>
+            <td>Best viewed from the Northern Hemisphere.</td>
+          </tr>
+          <tr>
+            <td>🌙 Supermoon</td>
+            <td>September 18, 2025</td>
+            <td>The moon will appear larger and brighter in the night sky.</td>
+          </tr>
+          <tr>
+            <td>🪐 Saturn at Opposition</td>
+            <td>October 15, 2025</td>
+            <td>Saturn will be closest to Earth, perfect for telescope viewing.</td>
+          </tr>
+          <tr>
+            <td>🌌 Geminid Meteor Shower</td>
+            <td>December 14, 2024</td>
+            <td>One of the brightest meteor showers of the year.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <form class="job-form">
+      <div class="form-row">
+        <label for="designation">Event</label>
+        <input type="text" id="designation" placeholder="Event that you want to add">
+      </div>
+
+      <div class="form-row">
+        <label for="salary">Date</label>
+        <input type="date" id="salary">
+      </div>
+
+      <div class="form-row">
+        <label for="location">Description</label>
+        <input type="text" id="location" placeholder="Describe">
+      </div>
+
+      <div class="form-row">
+        <button type="reset" class="btn btn-primary">Add Event</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
